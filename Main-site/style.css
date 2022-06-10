@@ -114,28 +114,23 @@ html {
     }
 }
 
-#example {
-    width: 450px;
-    margin: 250px auto;
-}
-
-h2 {
+h6 {
     text-align: center;
     color: #d9fff9;
-    font-size: 80px;
-    letter-spacing: 6px;
+    font-size: 50px;
+    letter-spacing: 4px;
     font-weight: 300;
     margin: 0;
     line-height: 0;
     animation: glitch1 3.5s infinite;
 }
 
-h2:nth-child(2) {
+h6:nth-child(2) {
     color: #0ef0e1;
     animation: glitch2 2.5s infinite;
 }
 
-h2:nth-child(3) {
+h6:nth-child(3) {
     color: #ff94eb;
     animation: glitch3 2.5s infinite;
 }

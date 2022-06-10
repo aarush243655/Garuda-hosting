@@ -7,9 +7,13 @@ body {
     margin: 0
 }
 
+.section {
+    height: 100vh;
+}
+
 .mySlides {
     display: none;
-    height: fit-content;
+    height: 100vh;
 }
 
 img {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./style2.css">
 
 </head>
 
@@ -20,17 +21,33 @@
     <div id='stars3'></div>
     <div id='title'>
         <h1><span>Garuda Hosting</span></h1>
-        <br>
+        <br><br><br><br>
         <div id="example">
             <h6><span>#1 Hosting</span></h6>
             <h6><span>#1 Hosting</span></h6>
             <h6><span>#1 Hosting</span></h6>
         </div>
-
     </div>
+    <!-- partial:index.partial.html -->
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+
+    <svg id="filters">
+<defs>
+    <filter id="threshold">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 255 -140" />
+    </filter>
+</defs>
+</svg>
     <!-- partial -->
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="./script.js"></script>
+    <script src="./script2.js"></script>
 
 </body>
 

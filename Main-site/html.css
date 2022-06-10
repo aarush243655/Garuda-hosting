@@ -7,11 +7,8 @@ body {
     margin: 0
 }
 
-.section {
-    height: 100vh;
-}
-
 .mySlides {
+    position: relative;
     display: none;
     height: 100vh;
 }
@@ -131,9 +128,11 @@ h2:nth-child(3) {
 
 /* Fading animation */
 
-.fade {
+.section {
+    height: 100vh;
+    position: absolute;
     animation-name: glitch1;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {

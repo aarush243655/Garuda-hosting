@@ -2,41 +2,83 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  position: relative;
-  letter-spacing: 0.04em;
+    box-sizing: border-box;
+    position: relative;
+    letter-spacing: 0.04em;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Signika Negative", sans-serif;
-  font-weight: 300;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 300;
 }
+
 .section {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  padding: 0;
-  text-align: center;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .bg1 {
-  background-color: #ccc;
+    background-color: #ccc;
 }
+
 .bg2 {
-  background-color: #333;
+    background-color: #333;
 }
+
 h1 {
-  font-size: 40px;
-  line-height: 1.2;
-  margin: 0;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0;
 }
+
 .revealUp {
-  opacity: 0;
-  visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
+
 .spacer {
-  height: 50vh;
-  background-color: #000;
+    height: 50vh;
+    background-color: #000;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10x;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }

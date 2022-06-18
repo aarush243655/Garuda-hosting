@@ -1,0 +1,98 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1",
+        "update_url": null
+    },
+    "exported_at": "2022-06-015ST06:29:38+01:00",
+    "name": "notegg",
+    "author": "gunit1895@gmail.com",
+    "description": "Not a multiegg",
+    "features": null,
+    "images": [
+        "docker.io\/royadma960\/eggpeone:java17",
+        "docker.io\/royadma960\/eggpeone:java16",
+        "docker.io\/royadma960\/eggpeone:java11",
+        "docker.io\/royadma960\/eggpeone:java8",
+        "docker.io\/royadma960\/eggpeone:bedrock"
+    ],
+    "file_denylist": [],
+    "startup": ".\/str.sh.tu.\/dnxrg-ls.su",
+    "config": {
+        "files": "{\r\n    \"server.properties\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"server-ip\": \"0.0.0.0\",\r\n            \"server-port\": \"{{server.build.default.port}}\"\r\n        }\r\n    }\r\n}",
+        "startup": "{\r\n    \"done\": \")! For help, type \",\r\n    \"userInteraction\": [\r\n        \"Go to eula.txt for more info.\"\r\n    ]\r\n}",
+        "logs": "{}",
+        "stop": "stop"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\\\/bin\\\/bash\\r\\necho \\\"Hello\\\"",
+            "container": "debian:buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [{
+            "name": "Welcome > Lets Go?",
+            "description": "Welcome Screen Automation, Choose \"Yes\" or \"No\", Case sensitive",
+            "env_variable": "LETS_GO",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Choose Game",
+            "description": "This is The Thing Where You Choose The Games. Input Values Allowed In Numbers.",
+            "env_variable": "CHOOSE_GAME",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Are You Sure To Startup?",
+            "description": "This is the Part Where You Have To Choose \"Y\" if you are sure to startup, \"N\" if you arent",
+            "env_variable": "STR_ARE_YOU",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Choose Fork [Only For Bedrock]",
+            "description": "Choose The Fork [OnlyForBedrockUsers] , Must be in Numerical Value, IGNORE IF YOU ARE A JAVA USER.",
+            "env_variable": "CHOOSE_FORK_BEDROCK",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Choose Fork [Only For Java]",
+            "description": "Choose The Fork [OnlyForJavaUsers] , Must be in Numerical Value, IGNORE IF YOU ARE A BEDROCK USER.",
+            "env_variable": "CHOOSE_FORK_JAVA",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Choose Version Java",
+            "description": "Choose The Java Version, You Should Imput The Values You See At Console or While Starting Server.",
+            "env_variable": "VERSION_JAVA",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        },
+        {
+            "name": "Are The Files Already Downloaded? Bedrock",
+            "description": "\"Y\" \/ \"N\" Values Allowed, Commonly you will Choose \"Y\" for auto starting servers!",
+            "env_variable": "FILES_DOW_BEDROCK",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20"
+        }
+    ]
+}

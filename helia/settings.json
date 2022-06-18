@@ -7,11 +7,11 @@
     "secret": "Default Secret (Change this to any string you want)"
   },
   "pterodactyl": {
-    "domain": "Pterodactyl URL",
+    "domain": "panel.garudahosting.tk",
     "key": "Pterodactyl API Key"
   },
   "linkvertise": {
-    "userid": "10000",
+    "userid": "442522",
     "coins": 2
   },
   "database": "sqlite://database.sqlite",
@@ -39,12 +39,12 @@
         ]
       },
       "bot": {
-        "token": "Discord bot token here",
+        "token": "OTM4NjQ5ODE4ODQ1MzAyODI0.GQboFk.yhyr8x5FuJTAZF6Gg9ksu6_RIBZ4STkKaD5f9E",
         "joinguild": {
           "_comment": "The Discord bot must be in these servers and have invite permissions. Automatic guild joining will not work unless role packages are configured correctly.",
           "enabled": false,
           "guildid": [
-            "Guild ID 1"
+            "980433639210876928"
           ]
         }
       },
@@ -65,7 +65,7 @@
       },
       "oauth2": {
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
-        "id": "ID",
+        "id": "938649818845302824",
         "secret": "Secret",
         "link": "http://example.com",
         "callbackpath": "/callback",
